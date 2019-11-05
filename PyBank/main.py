@@ -58,18 +58,7 @@ print(f"-------------------------------------\n"
       f"Greatest Increase in Profits: {month_increase} ($ {greatest_increase})\n"
       f"Greatest Decrease in Profits: {month_decrease} ($ {greatest_decrease})")
 
-# Export a text file with the results
-# output_path = os.path.join("budget_analysis.csv")
-# with open(output_path, 'w', newline='') as csvfile:
-#     budget_analysis = csv.writer(csvfile, delimiter=',')
-#
-#     budget_analysis.writerow(
-#         ['Total Months', 'Total Net Profit/Loss', 'Average Change', 'Month Greatest Increase in Profits',
-#          'Value Greatest Increase in Profits', 'Month Greatest Decrease in Profits',
-#          'Value Greatest Decrease in Profits'])
-#     budget_analysis.writerow(
-#         [total_months, net_loss_profit, average_loss_profit, month_increase, greatest_increase, month_decrease,
-#          greatest_decrease])
+
 output_path = os.path.join("budget_analysis.txt")
 with open(output_path, 'w') as txtfile:
     txtfile.write(f"-------------------------------------\n"
